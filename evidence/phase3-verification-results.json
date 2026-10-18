@@ -1,0 +1,131 @@
+﻿{
+    "T01_Startup":  {
+                        "Status":  "PASS",
+                        "ProcessId":  24800,
+                        "Hwnd":  788610,
+                        "IsVisible":  true,
+                        "WindowState":  "Normal",
+                        "IsMinimized":  false,
+                        "PrimaryOverlayProcessCount":  1
+                    },
+    "T15_BrowserRegression":  {
+                                  "Status":  "PASS",
+                                  "WebViewInitialized":  true,
+                                  "WebView2RuntimeVersion":  "155.0.4283.60",
+                                  "HostingMode":  "WebView2HwndHost",
+                                  "CurrentSource":  "poc://diagnostics-test-page",
+                                  "LastNavigationStatus":  "Success"
+                              },
+    "T02_DuplicateLaunch":  {
+                                "Status":  "PASS",
+                                "DuplicateExitCode":  2,
+                                "DuplicateInstanceDetected":  true,
+                                "DuplicateAttemptPid":  27712,
+                                "RunningInstanceCountAfterDuplicateAttempt":  1,
+                                "PrimaryHotkeyStillRegistered":  true
+                            },
+    "T03_ShortcutHide":  {
+                             "Status":  "PASS",
+                             "IsVisible":  false,
+                             "Win32IsWindowVisible":  false,
+                             "LifecycleState":  "Hidden",
+                             "LastHideReason":  "ShortcutToggle",
+                             "HideCount":  1,
+                             "ProcessStillRunning":  true
+                         },
+    "T04_ShortcutRestore":  {
+                                "Status":  "PASS",
+                                "IsVisible":  true,
+                                "SameHwnd":  true,
+                                "WindowState":  "Normal",
+                                "LastRestoreReason":  "ShortcutRestoreFromHidden",
+                                "RestoreCount":  1,
+                                "RestoredGeometry":  "65.3,75.3 720.0x500.0"
+                            },
+    "T05_Minimize":  {
+                         "Status":  "PASS",
+                         "IsMinimized":  true,
+                         "WindowState":  "Minimized",
+                         "LifecycleState":  "Minimized",
+                         "Win32IsIconic":  true,
+                         "MinimizeCount":  1,
+                         "SavedNormalGeometryPreserved":  "65.3,75.3 720.0x500.0",
+                         "ProcessStillRunning":  true
+                     },
+    "T06_ShortcutAfterMinimize":  {
+                                      "Status":  "PASS",
+                                      "IsVisible":  true,
+                                      "IsMinimized":  false,
+                                      "Win32IsIconic":  false,
+                                      "WindowState":  "Normal",
+                                      "LastRestoreReason":  "ShortcutRestoreFromMinimized",
+                                      "SameHwnd":  true,
+                                      "RestoredGeometry":  "65.3,75.3 720.0x500.0"
+                                  },
+    "T13_StatePreservation":  {
+                                  "Status":  "PASS",
+                                  "ModePreserved":  "Lite",
+                                  "GeometryPreserved":  "65.3,75.3 720.0x500.0",
+                                  "WebViewDomCounter":  3,
+                                  "WebViewDomActiveTab":  "Tab2-Docs",
+                                  "WebViewDomNoteValue":  "State persists across Lite switches \u0026 Ultra hide/restore!",
+                                  "CurrentSource":  "poc://diagnostics-test-page"
+                              },
+    "T07_RapidTransitions":  {
+                                 "Status":  "PASS",
+                                 "TotalHideCount":  6,
+                                 "TotalMinimizeCount":  6,
+                                 "TotalRestoreCount":  12,
+                                 "SameHwndPreserved":  true,
+                                 "RunningOverlayProcessCount":  1,
+                                 "FinalWindowState":  "Normal",
+                                 "FinalGeometry":  "65.3,75.3 720.0x500.0"
+                             },
+    "T08_LiteModeRegression":  {
+                                   "Status":  "PASS",
+                                   "OverlayRemainedVisible":  true,
+                                   "ExternalButtonClicks":  1,
+                                   "ExternalMenuClicks":  1,
+                                   "ExternalEditorText":  "phase3 lite regression ok",
+                                   "NoKeyboardLeakIntoOverlayUrlBox":  true
+                               },
+    "T09_UltraModeRegression":  {
+                                    "Status":  "PASS",
+                                    "MinimizeInUltraModeRemainedMinimizedNotHidden":  true,
+                                    "OutsideClickHidden":  true,
+                                    "LastHideReason":  "UltraOutsideClick",
+                                    "RestoredViaShortcut":  true,
+                                    "WorkspaceCounterPreserved":  3,
+                                    "WorkspaceTabPreserved":  "Tab2-Docs"
+                                },
+    "T10_XControlClose":  {
+                              "Status":  "PASS",
+                              "ClickedScreenCoordinates":  "756,101",
+                              "ProcessExitedWithinTimeout":  true,
+                              "ExitCode":  0,
+                              "CloseInitiator":  "XButton",
+                              "FinalLifecycleState":  "Closed"
+                          },
+    "T11_ShutdownCleanup":  {
+                                "Status":  "PASS",
+                                "IsShuttingDown":  true,
+                                "ShutdownCleanupCompleted":  true,
+                                "HotkeyRegistered":  false,
+                                "HotkeyUnregistered":  true,
+                                "HotkeyUnregisterCount":  1,
+                                "WebViewDisposed":  true,
+                                "SingleInstanceMutexReleased":  true
+                            },
+    "T14_SettingsPersistence":  {
+                                    "Status":  "PASS",
+                                    "ModeRestoredAfterUltraShutdown":  "Ultra",
+                                    "HotkeyRegisteredOnRelaunch":  true,
+                                    "ModeRestoredAfterLiteShutdown":  "Lite",
+                                    "ReusableMenuCloseInitiatorVerified":  "MenuClose",
+                                    "ReusableMenuCloseExitCode":  0
+                                },
+    "T12_NoOrphanProcess":  {
+                                "Status":  "PASS",
+                                "RemainingOverlayProcessCount":  0
+                            }
+}

@@ -1,0 +1,133 @@
+﻿{
+    "Environment":  {
+                        "WindowStation":  "WinSta0",
+                        "ThreadDesktop":  "exebox-JCHG4LJEPSZLPYDBYPJWYSFDCN",
+                        "SessionId":  8
+                    },
+    "T01_ApplicationStartup":  {
+                                   "Status":  "PASS",
+                                   "ProcessId":  18720,
+                                   "Hwnd":  264414,
+                                   "DefaultModeOnFreshStart":  "Lite",
+                                   "PersistedModeInSettingsJson":  "Lite",
+                                   "IsVisible":  true,
+                                   "TopmostVerified":  true
+                               },
+    "T02_ExistingBrowserHost":  {
+                                    "Status":  "PASS",
+                                    "WebView2RuntimeVersion":  "155.0.4283.45",
+                                    "HostingMode":  "WebView2HwndHost",
+                                    "CurrentSource":  "poc://diagnostics-test-page",
+                                    "LastNavigationStatus":  "Success"
+                                },
+    "T03_ExistingShortcut":  {
+                                 "Status":  "PASS",
+                                 "Shortcut":  "Ctrl + Alt + Space",
+                                 "HotkeyRegistered":  true,
+                                 "HiddenOnFirstPress":  true,
+                                 "RestoredOnSecondPress":  true
+                             },
+    "T04_LiteModeVisibility":  {
+                                   "Status":  "PASS",
+                                   "VisibleDuringExternalAppA":  true,
+                                   "VisibleDuringExternalAppB":  true,
+                                   "VisibleDuringVsCode":  true,
+                                   "VisibleAfterRapidSwitching":  true
+                               },
+    "T05_LiteModeExternalMouseInput":  {
+                                           "Status":  "PASS",
+                                           "ExternalAppAButtonClicks":  1,
+                                           "ExternalAppAMenuClicks":  1,
+                                           "ExternalAppBButtonClicks":  1,
+                                           "VsCodeClickFocusTransferred":  true
+                                       },
+    "T06_LiteModeExternalKeyboardInput":  {
+                                              "Status":  "PASS",
+                                              "ExternalAppAReceivedText":  "hello from lite mode editor",
+                                              "ExternalAppBReceivedText":  "chat message outside overlay",
+                                              "NoKeyboardLeakIntoOverlay":  true,
+                                              "VsCodeDetails":  {
+                                                                    "Tested":  true,
+                                                                    "VsCodeHwnd":  67914,
+                                                                    "HitTestedHwndAt1000x300":  67934,
+                                                                    "ForegroundHwndAfterClick":  67914,
+                                                                    "ForegroundProcessNameAfterClick":  "Code",
+                                                                    "FocusTransferredToVsCode":  true,
+                                                                    "OverlayRemainedVisible":  true,
+                                                                    "OverlayTopmostMaintained":  true,
+                                                                    "TypedTextLeakedIntoOverlayUrlBox":  false,
+                                                                    "TypedTextLeakedIntoOverlayNote":  false
+                                                                }
+                                          },
+    "T07_LiteModeApplicationSwitching":  {
+                                             "Status":  "PASS",
+                                             "ExternalFocusTransferCount":  18,
+                                             "OverlayRemainedVisibleThroughout":  true
+                                         },
+    "T08_LiteModeReturnAndWorkspace":  {
+                                           "Status":  "PASS",
+                                           "CounterAfterReturnIncrement":  4,
+                                           "ActiveTabPreserved":  "Tab2-Docs",
+                                           "NoteValuePreserved":  "State persists across Lite switches \u0026 Ultra hide/restore!"
+                                       },
+    "T13_OverlayOwnedControlsDoNotHide":  {
+                                              "Status":  "PASS",
+                                              "IsVisibleAfterInternalClicks":  true,
+                                              "UltraAutoHideCount":  0,
+                                              "InternalControlClickCount":  6
+                                          },
+    "T09_UltraModeOutsideClick":  {
+                                      "Status":  "PASS",
+                                      "HiddenOnOutsideClick":  true,
+                                      "LastHideReason":  "UltraOutsideClick",
+                                      "TotalUltraAutoHideCyclesVerified":  4
+                                  },
+    "T10_UltraModeBackgroundState":  {
+                                         "Status":  "PASS",
+                                         "ProcessRemainedRunningWhileHidden":  true,
+                                         "ProcessId":  18720
+                                     },
+    "T11_UltraModeRestoreViaShortcut":  {
+                                            "Status":  "PASS",
+                                            "RestoredViaCtrlAltSpace":  true,
+                                            "SameWindowHwndPreserved":  true,
+                                            "RestoredBounds":  "30.0,50.0 700.0x520.0"
+                                        },
+    "T12_WorkspacePreservationAcrossHideRestore":  {
+                                                       "Status":  "PASS",
+                                                       "WebViewDomCounterPreserved":  5,
+                                                       "WebViewActiveTabPreserved":  "Tab2-Docs",
+                                                       "WebViewNotePreserved":  "State persists across Lite switches \u0026 Ultra hide/restore!",
+                                                       "UrlPreserved":  "poc://diagnostics-test-page"
+                                                   },
+    "T15_WindowBehaviourMoveResizeTopmostDpi":  {
+                                                    "Status":  "PASS",
+                                                    "MovedAndResizedBounds":  "80.0,90.0 740.0x480.0",
+                                                    "MinBoundsClampedFrom300x200":  "520.0x380.0",
+                                                    "TopmostActive":  true
+                                                },
+    "T14_ModePersistenceAcrossRestart":  {
+                                             "Status":  "PASS",
+                                             "SettingsJsonSavedUltra":  "Ultra",
+                                             "RestoredModeAfterUltraRestart":  "Ultra",
+                                             "RestoredModeAfterLiteRestart":  "Lite"
+                                         },
+    "T16_StabilityAndSingleInstance":  {
+                                           "Status":  "PASS",
+                                           "DuplicateInstanceExitCode":  2,
+                                           "CleanExitCompleted":  true,
+                                           "HotkeyUnregisteredOnClose":  true
+                                       },
+    "T17_BaselinePhase1Regression":  {
+                                         "Status":  "PASS",
+                                         "HotkeyCtrlAltSpaceRegistered":  true,
+                                         "SetWindowDisplayAffinityReturn":  true,
+                                         "ExternalGetWindowDisplayAffinityHex":  "0x00000011",
+                                         "DwmCornerHResult":  0,
+                                         "DwmDarkHResult":  0
+                                     },
+    "ExternalApp_WhatsApp_SandboxStatus":  {
+                                               "Status":  "BLOCKED",
+                                               "Reason":  "WhatsApp Desktop (5319275A.WhatsAppDesktop_2.2640.100.0_x64__cv1g1gvanyjgm) is an MSIX/UWP packaged application activated via DCOM/ApplicationFrameHost on the interactive user desktop (WinSta0\\Default) and cannot be instantiated inside the automated runner\u0027s isolated non-interactive desktop (WinSta0\\exebox-JCHG4LJEPSZLPYDBYPJWYSFDCN). Real external multi-application switching was verified using Microsoft VS Code (Code.exe) and two independent external Win32/WinForms desktop processes (ExternalEditorApp and ExternalMessagingApp)."
+                                           }
+}

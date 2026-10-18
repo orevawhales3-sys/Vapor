@@ -1,0 +1,97 @@
+﻿{
+    "Environment":  {
+                        "WindowStation":  "WinSta0",
+                        "ThreadDesktop":  "exebox-QU4YYFSEC7R7L43NGVXCIX32AK",
+                        "SessionId":  7
+                    },
+    "Test1_InitialLaunchAndWebView2":  {
+                                           "Status":  "PASS",
+                                           "DotNetVersion":  "10.0.11",
+                                           "OsVersion":  "Microsoft Windows NT 10.0.26200.0",
+                                           "WebView2RuntimeVersion":  "155.0.4283.45",
+                                           "HostingMode":  "WebView2HwndHost",
+                                           "Hwnd":  1312754,
+                                           "WsExTopmostVerified":  true,
+                                           "DwmDarkHResult":  0,
+                                           "DwmCornerHResult":  0,
+                                           "HotkeyRegistered":  true,
+                                           "SetWindowDisplayAffinityReturn":  true,
+                                           "ReportedDisplayAffinityHex":  "0x00000011",
+                                           "ExternalGetWindowDisplayAffinity":  "0x00000011",
+                                           "InitialBounds":  "210.0,96.0 860.0x560.0",
+                                           "MinBounds":  "520.0x380.0"
+                                       },
+    "Test2_SingleInstanceGuard":  {
+                                      "Status":  "PASS",
+                                      "DuplicateProcessExitCode":  2,
+                                      "ExpectedExitCode":  2
+                                  },
+    "Test3_CaptureWithExclusionActive":  {
+                                             "SetWindowDisplayAffinityReturn":  true,
+                                             "GetWindowDisplayAffinityHex":  "0x00000011",
+                                             "PrintWindowCaptureResult":  {
+                                                                              "PrintWindowReturn":  true,
+                                                                              "LastError":  203,
+                                                                              "HeaderPixelRGB":  "0,0,0",
+                                                                              "CenterPixelRGB":  "0,0,0",
+                                                                              "IsAllBlack":  true,
+                                                                              "OutputPath":  "C:\\Users\\harshit\\Dynamic overlay\\poc\\DynamicOverlay.Poc\\evidence\\poc_printwindow_wda_excludefromcapture.png"
+                                                                          },
+                                             "DesktopBitBltCopyFromScreenNote":  "Unavailable in non-interactive desktop (exebox-QU4YYFSEC7R7L43NGVXCIX32AK): Exception calling \"CopyFromScreen\" with \"5\" argument(s): \"The handle is invalid\""
+                                         },
+    "Test4_RepeatedHotkeyToggles":  {
+                                        "Status":  "PASS",
+                                        "TotalToggles":  6,
+                                        "FinalVisible":  true,
+                                        "StatePreserved":  true,
+                                        "CycleDetails":  [
+                                                             "Cycle 1: isVisible=False, bounds=(210.0,96.0 860.0x560.0)",
+                                                             "Cycle 2: isVisible=True, bounds=(210.0,96.0 860.0x560.0)",
+                                                             "Cycle 3: isVisible=False, bounds=(210.0,96.0 860.0x560.0)",
+                                                             "Cycle 4: isVisible=True, bounds=(210.0,96.0 860.0x560.0)",
+                                                             "Cycle 5: isVisible=False, bounds=(210.0,96.0 860.0x560.0)",
+                                                             "Cycle 6: isVisible=True, bounds=(210.0,96.0 860.0x560.0)"
+                                                         ]
+                                    },
+    "Test5_MoveResizeAndMinBounds":  {
+                                         "Status":  "PASS",
+                                         "ResizedBounds":  "240.0,116.0 700.0x450.0",
+                                         "MinClampedBoundsWhenRequested300x200":  "520.0x380.0",
+                                         "RestoredBounds":  "210.0,96.0 860.0x560.0"
+                                     },
+    "Test6_CleanShutdownAndHotkeyRelease":  {
+                                                "Status":  "PASS",
+                                                "ProcessExitedCleanly":  true,
+                                                "HotkeyUnregisteredByApp":  true,
+                                                "HotkeyAvailableAfterExit":  true
+                                            },
+    "Test7_HotkeyConflictDetection":  {
+                                          "Status":  "PASS",
+                                          "HotkeyRegistered":  false,
+                                          "Win32ErrorCode":  1409,
+                                          "ExpectedErrorCode":  1409,
+                                          "PrintWindowCapture":  {
+                                                                     "PrintWindowReturn":  true,
+                                                                     "LastError":  203,
+                                                                     "HeaderPixelRGB":  "43,43,43",
+                                                                     "CenterPixelRGB":  "29,39,57",
+                                                                     "IsAllBlack":  false,
+                                                                     "OutputPath":  "C:\\Users\\harshit\\Dynamic overlay\\poc\\DynamicOverlay.Poc\\evidence\\poc_conflict_banner_visible.png"
+                                                                 }
+                                      },
+    "Test8_VisibleInterfaceAndUrlNavigation":  {
+                                                   "Status":  "PASS",
+                                                   "HostingMode":  "WebView2HwndHost",
+                                                   "NavigatedSource":  "file:///C:/Users/harshit/Dynamic%20overlay/poc/DynamicOverlay.Poc/evidence/nav-test.html",
+                                                   "NavigationStatus":  "Success",
+                                                   "PrintWindowCaptureWdaNone":  {
+                                                                                     "PrintWindowReturn":  true,
+                                                                                     "LastError":  203,
+                                                                                     "HeaderPixelRGB":  "43,43,43",
+                                                                                     "CenterPixelRGB":  "15,23,42",
+                                                                                     "IsAllBlack":  false,
+                                                                                     "OutputPath":  "C:\\Users\\harshit\\Dynamic overlay\\poc\\DynamicOverlay.Poc\\evidence\\poc_printwindow_wda_none.png"
+                                                                                 },
+                                                   "CompositeUiSnapshotCreated":  true
+                                               }
+}

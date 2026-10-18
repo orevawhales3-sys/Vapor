@@ -1,0 +1,98 @@
+﻿{
+    "T01_MainBrowserWindowAndHeader":  {
+                                           "Status":  "PASS",
+                                           "ActivePanelView":  "Browser",
+                                           "WebViewHostingMode":  "WebView2HwndHost",
+                                           "CurrentMode":  "Lite",
+                                           "HeaderControlsUnclipped":  true,
+                                           "VisualTabCount":  5,
+                                           "ActiveVisualTabTitle":  "Microsoft",
+                                           "Screenshot":  "evidence\\phase4_browser_view.png"
+                                       },
+    "T02_Phase4VisualTabStrip":  {
+                                     "Status":  "PASS",
+                                     "InitialTabCount":  5,
+                                     "TabCountAfterAdd":  6,
+                                     "ActiveTitleAfterAdd":  "Docs Tab",
+                                     "ActiveTitleAfterSelectFirst":  "Microsoft",
+                                     "TabCountAfterClose":  5
+                                 },
+    "T03_MinimumSize520x380HeaderUnclipped":  {
+                                                  "Status":  "PASS",
+                                                  "ClampedWidth":  520.0,
+                                                  "ClampedHeight":  380.0,
+                                                  "HeaderControlsUnclippedAt520x380":  true,
+                                                  "CloseButtonCoordsAt520x380":  "520,76",
+                                                  "MinimizeButtonCoordsAt520x380":  "460,76",
+                                                  "MaximizeButtonCoordsAt520x380":  "490,76",
+                                                  "MenuButtonCoordsAt520x380":  "430,76",
+                                                  "Screenshot":  "evidence\\phase4_minimum_size_520x380.png"
+                                              },
+    "T04_WindowControlsMinimizeMaximizeRestore":  {
+                                                      "Status":  "PASS",
+                                                      "MinimizedState":  "Minimized",
+                                                      "RestoredFromMinimizeState":  "Normal",
+                                                      "MaximizedState":  "Maximized",
+                                                      "RestoredFromMaximizeState":  "Normal",
+                                                      "RestoredBounds":  "30.0,50.0 720.0x520.0"
+                                                  },
+    "T05_ThreeDotMenuPanelInUltraMode":  {
+                                             "Status":  "PASS",
+                                             "ActivePanelView":  "ThreeDotMenu",
+                                             "ModeDuringMenuOpen":  "Ultra",
+                                             "RemainedVisibleWithoutSpuriousAutoHide":  true,
+                                             "Screenshot":  "evidence\\phase4_three_dot_menu.png"
+                                         },
+    "T06_SavedShortcutsPanelCrudAndValidation":  {
+                                                     "Status":  "PASS",
+                                                     "DefaultShortcutsCount":  7,
+                                                     "InvalidUrlRejectedError":  "URL cannot contain spaces.",
+                                                     "CountAfterValidAdd":  8,
+                                                     "CountAfterRemove":  7,
+                                                     "ReturnedToBrowserOnOpen":  true,
+                                                     "Screenshot":  "evidence\\phase4_shortcuts_panel.png"
+                                                 },
+    "T07_NotesPanelAndHonestPersistence":  {
+                                               "Status":  "PASS",
+                                               "NoteTitle":  "Phase 4 Persistent Note",
+                                               "NoteLastSavedStatus":  "Auto-saved • 10:00 PM",
+                                               "NoteSaveSucceeded":  true,
+                                               "NotesJsonExistsOnDisk":  true,
+                                               "NotesJsonTitleOnDisk":  "Phase 4 Persistent Note",
+                                               "Screenshot":  "evidence\\phase4_notes_panel.png"
+                                           },
+    "T08_SettingsPanelAndCaptureProtection":  {
+                                                  "Status":  "PASS",
+                                                  "AffinityWhenDisabledHex":  "0x00000000",
+                                                  "AffinityWhenEnabledHex":  "0x00000011",
+                                                  "CaptureProtectionPersistedInSettingsJson":  true,
+                                                  "Screenshot":  "evidence\\phase4_settings_panel.png"
+                                              },
+    "T09_AboutPanelAndBrowserStateRecovery":  {
+                                                  "Status":  "PASS",
+                                                  "AboutPanelOpened":  true,
+                                                  "ReturnedToBrowserView":  true,
+                                                  "WebViewDomCounterAfterReturn":  1,
+                                                  "Screenshot":  "evidence\\phase4_about_panel.png"
+                                              },
+    "T10_LiteAndUltraModeRegressions":  {
+                                            "Status":  "PASS",
+                                            "UltraOutsideClickAutoHidden":  true,
+                                            "RestoredViaCtrlAltSpace":  true,
+                                            "LiteModeOverlayRemainedVisible":  true,
+                                            "ExternalAppTypedTextInLiteMode":  "phase4 lite external test"
+                                        },
+    "T11_PersistenceAcrossRestartAndCleanShutdown":  {
+                                                         "Status":  "PASS",
+                                                         "XButtonCleanExit":  true,
+                                                         "XButtonCloseInitiator":  "XButton",
+                                                         "PersistedModeAfterRestart":  "Lite",
+                                                         "PersistedCaptureProtectionAfterRestart":  true,
+                                                         "PersistedShortcutsCountAfterRestart":  8,
+                                                         "PersistedNoteTitleAfterRestart":  "Phase 4 Persistent Note",
+                                                         "DuplicateInstanceExitCode":  2,
+                                                         "MenuCloseCleanExit":  true,
+                                                         "MenuCloseInitiator":  "MenuClose",
+                                                         "RemainingOverlayProcesses":  0
+                                                     }
+}

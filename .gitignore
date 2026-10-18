@@ -1,0 +1,16 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio cache and configuration
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Temporary and log files
+*.tmp
+*.log
+evidence/*.tmp
+evidence/*.exe
